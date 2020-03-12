@@ -1,4 +1,4 @@
-package chapter01;
+package jUnit.chapter01;
 
 @FunctionalInterface
 public interface Scoreable {
