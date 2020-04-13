@@ -1,22 +1,27 @@
 package chapter02;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class ProfileTest {
+
+    private Profile profile;
+    private BooleanQuestion question;
+    private Criteria criteria;
+
+    @Before
+    public void create() {
+        Profile profile = new Profile("Bull Hockey, INC.");
+        Question question = new BooleanQuestion(1, "Got Bonuses");
+        criteria = new Criteria();
+    }
 
     @Test
     public void matchAnswersFalseWhenMustMatchCriteriaNotMet() {
-        Profile profile = new Profile("Bull Hockey, INC.");
-        Question question = new BooleanQuestion(1, "Got Bonuses");
-        Answer profileAnswer = new Answer(question, Bool.FALSE);
-        profile.add(profileAnswer);
-        Criteria criteria = new Criteria();
-        Answer criteriaAnswer = new Answer(question, Bool.TRUE);
-        Criterion criterion = new Criterion(criteriaAnswer, Weight.MustMatch);
-        criteria.add(criterion);
+        profile.add(new Answer(question, Bool.FALSE));
+        criteria.add(new Criterion(new Answer(question, Bool.TRUE), Weight.MustMatch));
 
         boolean matches = profile.matches(criteria);
 
@@ -25,14 +30,8 @@ public class ProfileTest {
 
     @Test
     public void matchAnswersTrueForAnyDontCareCriteria() {
-        Profile profile = new Profile("Bull Hockey, INC.");
-        Question question = new BooleanQuestion(1, "Got milk");
-        Answer profileAnswer = new Answer(question, Bool.FALSE);
-        profile.add(profileAnswer);
-        Criteria criteria = new Criteria();
-        Answer criteriaAnswer = new Answer(question, Bool.TRUE);
-        Criterion criterion = new Criterion(criteriaAnswer, Weight.DontCare);
-        criteria.add(criterion);
+        profile.add(new Answer(question, Bool.FALSE));
+        criteria.add(new Criterion(new Answer(question, Bool.TRUE), Weight.DontCare));
 
         boolean matches = profile.matches(criteria);
 
