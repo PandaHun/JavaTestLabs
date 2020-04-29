@@ -7,12 +7,9 @@
     <list default="true" id="c1336738-1b41-47cb-9a5f-c915aea219b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/MemberRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/service/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +57,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="HTML File" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -95,7 +93,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -117,59 +117,13 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MemberServiceTest.중복회원예외">
-    <configuration name="MemberRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jpashop.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpa.jpashop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpa.jpashop" />
-      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.MemberRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberRepositoryTest.findMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jpashop.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpa.jpashop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpa.jpashop" />
-      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.MemberRepositoryTest" />
-      <option name="METHOD_NAME" value="findMember" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberRepositoryTest.testMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jpashop.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jpa.jpashop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jpa.jpashop" />
-      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.MemberRepositoryTest" />
-      <option name="METHOD_NAME" value="testMember" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.JpashopApplication">
     <configuration name="MemberServiceTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jpashop.test" />
       <extension name="coverage">
@@ -218,6 +172,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpashop.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jpa.jpashop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jpa.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.service.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.상품주문" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpashop.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jpa.jpashop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jpa.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="상품주문" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.상품주문재고수량초과" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpashop.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jpa.jpashop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jpa.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="상품주문재고수량초과" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JpashopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jpashop.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jpa.jpashop.JpashopApplication" />
@@ -227,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceTest" />
+        <item itemvalue="JUnit.OrderServiceTest.상품주문재고수량초과" />
+        <item itemvalue="JUnit.OrderServiceTest.상품주문" />
         <item itemvalue="JUnit.MemberServiceTest.중복회원예외" />
         <item itemvalue="JUnit.MemberServiceTest.회원가입" />
-        <item itemvalue="JUnit.MemberRepositoryTest.testMember" />
-        <item itemvalue="JUnit.MemberRepositoryTest" />
-        <item itemvalue="JUnit.MemberRepositoryTest.findMember" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +265,7 @@
       <workItem from="1588045027549" duration="5401000" />
       <workItem from="1588051348133" duration="3386000" />
       <workItem from="1588135439679" duration="670000" />
-      <workItem from="1588136642011" duration="1661000" />
+      <workItem from="1588136642011" duration="7314000" />
     </task>
     <servers />
   </component>
@@ -316,42 +317,42 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588137981713" />
-    <state width="1748" height="400" key="GridCell.Tab.0.bottom" timestamp="1588137993543">
+    <state width="1748" height="251" key="GridCell.Tab.0.bottom" timestamp="1588147714334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993543" />
+    <state width="1748" height="251" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
     <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562319" />
-    <state width="1748" height="400" key="GridCell.Tab.0.center" timestamp="1588137993542">
+    <state width="1748" height="251" key="GridCell.Tab.0.center" timestamp="1588147714333">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993542" />
+    <state width="1748" height="251" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714333" />
     <state width="1748" height="400" key="GridCell.Tab.0.center/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="400" key="GridCell.Tab.0.left" timestamp="1588137993541">
+    <state width="1748" height="251" key="GridCell.Tab.0.left" timestamp="1588147714332">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993541" />
+    <state width="1748" height="251" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714332" />
     <state width="1748" height="400" key="GridCell.Tab.0.left/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="400" key="GridCell.Tab.0.right" timestamp="1588137993543">
+    <state width="1748" height="251" key="GridCell.Tab.0.right" timestamp="1588147714333">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993543" />
+    <state width="1748" height="251" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714333" />
     <state width="1748" height="400" key="GridCell.Tab.0.right/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562318" />
-    <state width="1748" height="400" key="GridCell.Tab.1.bottom" timestamp="1588057427246">
+    <state width="1748" height="251" key="GridCell.Tab.1.bottom" timestamp="1588147714335">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588057427246" />
-    <state width="1748" height="400" key="GridCell.Tab.1.center" timestamp="1588057427245">
+    <state width="1748" height="251" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714335" />
+    <state width="1748" height="251" key="GridCell.Tab.1.center" timestamp="1588147714334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588057427245" />
-    <state width="1748" height="400" key="GridCell.Tab.1.left" timestamp="1588057427244">
+    <state width="1748" height="251" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
+    <state width="1748" height="251" key="GridCell.Tab.1.left" timestamp="1588147714334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588057427244" />
-    <state width="1748" height="400" key="GridCell.Tab.1.right" timestamp="1588057427245">
+    <state width="1748" height="251" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
+    <state width="1748" height="251" key="GridCell.Tab.1.right" timestamp="1588147714335">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588057427245" />
+    <state width="1748" height="251" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714335" />
     <state width="1748" height="347" key="GridCell.Tab.2.bottom" timestamp="1588051336145">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -377,14 +378,26 @@
     </state>
     <state x="383" y="140" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1588050798223" />
     <state x="383" y="140" key="SettingsEditor/0.23.1792.1027@0.23.1792.1027" timestamp="1588048079172" />
-    <state x="674" y="308" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588057183549">
+    <state x="745" y="482" key="VCS.ChangelistChooser" timestamp="1588143525108">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="674" y="308" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588057183549" />
-    <state x="477" y="285" width="837" height="550" key="find.popup" timestamp="1586597997675">
+    <state x="745" y="482" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1588143525108" />
+    <state x="678" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588142864784">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="477" y="285" width="837" height="550" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1586597997675" />
+    <state x="678" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1588142864784" />
+    <state x="674" y="308" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588142869520">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="674" y="308" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588142869520" />
+    <state x="633" y="319" key="extract.method.dialog" timestamp="1588143533255">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="633" y="319" key="extract.method.dialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588143533255" />
+    <state x="477" y="285" width="837" height="550" key="find.popup" timestamp="1588143711807">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="477" y="285" width="837" height="550" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1588143711807" />
     <state x="559" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1588136173049">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
