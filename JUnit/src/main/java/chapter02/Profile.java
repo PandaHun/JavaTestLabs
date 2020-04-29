@@ -1,10 +1,11 @@
 package chapter02;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Profile {
 
-    private Map<String , Answer> answers = new HashMap<>();
+    private Map<String, Answer> answers = new HashMap<>();
     private int score;
     private String name;
 
@@ -26,9 +27,25 @@ public class Profile {
         boolean kill = false;
         boolean anyMatches = false;
 
-        for (Criterion criterion: criteria) {
-            Answer answer = answer.get(criterion.getAnswer().getQuestionText());
-            boolean matches = criterion
+        for (Criterion criterion : criteria) {
+            Answer answer = answers.get(criterion.getAnswer().getQuestionText());
+            boolean match = criterion.getWeight() == Weight.DontCare || answer.match(criterion.getAnswer());
+
+            if (!match && criterion.getWeight() == Weight.MustMatch) {
+                kill = true;
+            }
+            if (match) {
+                score += criterion.getWeight().getValue();
+            }
+            anyMatches |= match;
         }
+        if (kill) {
+            return false;
+        }
+        return anyMatches;
+    }
+
+    public int score() {
+        return score;
     }
 }
