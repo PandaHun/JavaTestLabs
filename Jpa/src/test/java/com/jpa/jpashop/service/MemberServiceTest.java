@@ -47,7 +47,5 @@ public class MemberServiceTest {
         } catch (IllegalStateException e) {
             return;
         }
-
-
     }
 }

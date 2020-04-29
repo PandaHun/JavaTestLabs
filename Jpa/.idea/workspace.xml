@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1336738-1b41-47cb-9a5f-c915aea219b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Object/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Object/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/MemberRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jpa/jpashop/service/MemberServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +63,8 @@
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,6 +106,13 @@
       <recent name="com.jpa.jpashop.service" />
       <recent name="com.jpa.jpashop" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jpa.jpashop.exception" />
+      <recent name="com.jpa.jpashop.domain" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.jpa.jpashop.domain" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -115,12 +120,6 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/java" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.jpa.jpashop.domain" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.jpa.jpashop.domain" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MemberServiceTest.중복회원예외">
@@ -203,6 +202,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberServiceTest.중복회원예외" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpashop.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jpa.jpashop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jpa.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.jpa.jpashop.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="중복회원예외" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JpashopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jpashop.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jpa.jpashop.JpashopApplication" />
@@ -249,6 +264,7 @@
       <workItem from="1588045027549" duration="5401000" />
       <workItem from="1588051348133" duration="3386000" />
       <workItem from="1588135439679" duration="670000" />
+      <workItem from="1588136642011" duration="1661000" />
     </task>
     <servers />
   </component>
@@ -276,6 +292,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="690" y="442" width="723" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588045871969" />
+    <state x="708" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1588138286130">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="708" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1588138286130" />
     <state x="632" y="341" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1588045995730">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -292,29 +312,29 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="647" y="36" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586593810833" />
-    <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588049394376">
+    <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588137981713">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588049394376" />
-    <state width="1748" height="400" key="GridCell.Tab.0.bottom" timestamp="1588057562319">
-      <screen x="0" y="23" width="1792" height="1027" />
+    <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588137981713" />
+    <state width="1748" height="400" key="GridCell.Tab.0.bottom" timestamp="1588137993543">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588057437298" />
+    <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993543" />
     <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562319" />
-    <state width="1748" height="400" key="GridCell.Tab.0.center" timestamp="1588057562317">
-      <screen x="0" y="23" width="1792" height="1027" />
+    <state width="1748" height="400" key="GridCell.Tab.0.center" timestamp="1588137993542">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588057437297" />
+    <state width="1748" height="400" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993542" />
     <state width="1748" height="400" key="GridCell.Tab.0.center/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="400" key="GridCell.Tab.0.left" timestamp="1588057562317">
-      <screen x="0" y="23" width="1792" height="1027" />
+    <state width="1748" height="400" key="GridCell.Tab.0.left" timestamp="1588137993541">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588057437296" />
+    <state width="1748" height="400" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993541" />
     <state width="1748" height="400" key="GridCell.Tab.0.left/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="400" key="GridCell.Tab.0.right" timestamp="1588057562318">
-      <screen x="0" y="23" width="1792" height="1027" />
+    <state width="1748" height="400" key="GridCell.Tab.0.right" timestamp="1588137993543">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="400" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588057437298" />
+    <state width="1748" height="400" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588137993543" />
     <state width="1748" height="400" key="GridCell.Tab.0.right/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562318" />
     <state width="1748" height="400" key="GridCell.Tab.1.bottom" timestamp="1588057427246">
       <screen x="0" y="0" width="1792" height="1120" />
