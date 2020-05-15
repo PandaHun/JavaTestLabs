@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1336738-1b41-47cb-9a5f-c915aea219b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/jpashop/domain/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +56,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -229,9 +225,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.OrderServiceTest" />
-        <item itemvalue="JUnit.OrderServiceTest.상품주문재고수량초과" />
         <item itemvalue="JUnit.OrderServiceTest.상품주문" />
-        <item itemvalue="JUnit.MemberServiceTest.중복회원예외" />
         <item itemvalue="JUnit.MemberServiceTest.회원가입" />
       </list>
     </recent_temporary>
@@ -265,7 +259,8 @@
       <workItem from="1588045027549" duration="5401000" />
       <workItem from="1588051348133" duration="3386000" />
       <workItem from="1588135439679" duration="670000" />
-      <workItem from="1588136642011" duration="7314000" />
+      <workItem from="1588136642011" duration="7648000" />
+      <workItem from="1589522074809" duration="1569000" />
     </task>
     <servers />
   </component>
@@ -317,42 +312,42 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="633" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1588137981713" />
-    <state width="1748" height="251" key="GridCell.Tab.0.bottom" timestamp="1588147714334">
+    <state width="1748" height="251" key="GridCell.Tab.0.bottom" timestamp="1589523461268">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
+    <state width="1748" height="251" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461268" />
     <state width="1748" height="400" key="GridCell.Tab.0.bottom/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562319" />
-    <state width="1748" height="251" key="GridCell.Tab.0.center" timestamp="1588147714333">
+    <state width="1748" height="251" key="GridCell.Tab.0.center" timestamp="1589523461267">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714333" />
+    <state width="1748" height="251" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461267" />
     <state width="1748" height="400" key="GridCell.Tab.0.center/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="251" key="GridCell.Tab.0.left" timestamp="1588147714332">
+    <state width="1748" height="251" key="GridCell.Tab.0.left" timestamp="1589523461267">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714332" />
+    <state width="1748" height="251" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461267" />
     <state width="1748" height="400" key="GridCell.Tab.0.left/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562317" />
-    <state width="1748" height="251" key="GridCell.Tab.0.right" timestamp="1588147714333">
+    <state width="1748" height="251" key="GridCell.Tab.0.right" timestamp="1589523461268">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714333" />
+    <state width="1748" height="251" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461268" />
     <state width="1748" height="400" key="GridCell.Tab.0.right/0.23.1792.1027@0.23.1792.1027" timestamp="1588057562318" />
-    <state width="1748" height="251" key="GridCell.Tab.1.bottom" timestamp="1588147714335">
+    <state width="1748" height="251" key="GridCell.Tab.1.bottom" timestamp="1589523461270">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714335" />
-    <state width="1748" height="251" key="GridCell.Tab.1.center" timestamp="1588147714334">
+    <state width="1748" height="251" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461270" />
+    <state width="1748" height="251" key="GridCell.Tab.1.center" timestamp="1589523461269">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
-    <state width="1748" height="251" key="GridCell.Tab.1.left" timestamp="1588147714334">
+    <state width="1748" height="251" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461269" />
+    <state width="1748" height="251" key="GridCell.Tab.1.left" timestamp="1589523461269">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714334" />
-    <state width="1748" height="251" key="GridCell.Tab.1.right" timestamp="1588147714335">
+    <state width="1748" height="251" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461269" />
+    <state width="1748" height="251" key="GridCell.Tab.1.right" timestamp="1589523461269">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1748" height="251" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588147714335" />
+    <state width="1748" height="251" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1589523461269" />
     <state width="1748" height="347" key="GridCell.Tab.2.bottom" timestamp="1588051336145">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -382,10 +377,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="745" y="482" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1588143525108" />
-    <state x="678" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588142864784">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="678" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589522353684">
+      <screen x="0" y="23" width="1792" height="1027" />
     </state>
     <state x="678" y="483" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1588142864784" />
+    <state x="678" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1027@0.23.1792.1027" timestamp="1589522353684" />
     <state x="674" y="308" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588142869520">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
