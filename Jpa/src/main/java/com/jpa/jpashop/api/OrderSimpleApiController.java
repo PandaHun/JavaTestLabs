@@ -49,6 +49,19 @@ public class OrderSimpleApiController {
                 .collect(Collectors.toList());
     }
 
+    /*
+        fetch join
+        기술적으로는 Join, JPA의 Fetch를 활용
+        Lazy를 무시하고 실제 값을 가져와서 넘겨줌
+     */
+    @GetMapping("/api/v3/simple-orders")
+    public List<SimpleOrderDto> ordersV3() {
+        List<Order> orders = orderRepository.findAllWithMemberDelivery();
+        return orders.stream()
+                .map(SimpleOrderDto::new)
+                .collect(Collectors.toList());
+    }
+
     @Data
     static class SimpleOrderDto {
         private Long orderId;
