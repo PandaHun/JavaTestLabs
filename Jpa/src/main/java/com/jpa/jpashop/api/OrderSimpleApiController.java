@@ -5,6 +5,7 @@ import com.jpa.jpashop.domain.Order;
 import com.jpa.jpashop.domain.OrderSearch;
 import com.jpa.jpashop.domain.OrderStatus;
 import com.jpa.jpashop.repository.OrderRepository;
+import com.jpa.jpashop.repository.SimpleOrderQueryDto;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,10 +43,10 @@ public class OrderSimpleApiController {
     Eager로 바꾸면? 예상치 못한게 나온다..
      */
     @GetMapping("/api/v2/simple-orders")
-    public List<SimpleOrderDto> ordersV2() {
+    public List<SimpleOrderQueryDto> ordersV2() {
         List<Order> orders = orderRepository.findAllByString(new OrderSearch());
         return orders.stream()
-                .map(SimpleOrderDto::new)
+                .map(SimpleOrderQueryDto::new)
                 .collect(Collectors.toList());
     }
 
@@ -55,27 +56,15 @@ public class OrderSimpleApiController {
         Lazy를 무시하고 실제 값을 가져와서 넘겨줌
      */
     @GetMapping("/api/v3/simple-orders")
-    public List<SimpleOrderDto> ordersV3() {
+    public List<SimpleOrderQueryDto> ordersV3() {
         List<Order> orders = orderRepository.findAllWithMemberDelivery();
         return orders.stream()
-                .map(SimpleOrderDto::new)
+                .map(SimpleOrderQueryDto::new)
                 .collect(Collectors.toList());
     }
 
-    @Data
-    static class SimpleOrderDto {
-        private Long orderId;
-        private String name;
-        private LocalDateTime orderDate;
-        private OrderStatus orderStatus;
-        private Address address;
-
-        public SimpleOrderDto(Order order) {
-            orderId = order.getId();
-            name = order.getMember().getName();
-            orderDate = order.getOrderDate();
-            orderStatus = order.getStatus();
-            address = order.getMember().getAddress()
-        }
+    @GetMapping("/api/v4/simple-orders")
+    public List<SimpleOrderQueryDto> ordersV4() {
+        return orderRepository.findOrderDtos();
     }
 }
