@@ -13,6 +13,4 @@ public class CEmailSigninFailedException extends RuntimeException {
     public CEmailSigninFailedException() {
         super();
     }
-
-
 }

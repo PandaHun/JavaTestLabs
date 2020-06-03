@@ -1,8 +1,8 @@
 package com.pandahune.jwttest.service;
 
-import com.pandahune.jwttest.domain.result.CommonResult;
-import com.pandahune.jwttest.domain.result.ListResult;
-import com.pandahune.jwttest.domain.result.SingleResult;
+import com.pandahune.jwttest.model.response.CommonResult;
+import com.pandahune.jwttest.model.response.ListResult;
+import com.pandahune.jwttest.model.response.SingleResult;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class ResponseService {
 
+    // enum으로 api 요청 결과에 대한 code, message를 정의합니다.
     public enum CommonResponse {
         SUCCESS(0, "성공하였습니다.");
 

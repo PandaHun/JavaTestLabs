@@ -1,4 +1,4 @@
-package com.pandahune.jwttest.domain.result;
+package com.pandahune.jwttest.model.response;
 
 import lombok.Getter;
 import lombok.Setter;

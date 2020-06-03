@@ -1,11 +1,10 @@
-package com.pandahune.jwttest.service;
+package com.pandahune.jwttest.service.security;
 
 import com.pandahune.jwttest.advice.exception.CUserNotFoundException;
-import com.pandahune.jwttest.repository.UserJpaRepo;
+import com.pandahune.jwttest.repo.UserJpaRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
@@ -14,8 +13,7 @@ public class CustomUserDetailService implements UserDetailsService {
 
     private final UserJpaRepo userJpaRepo;
 
-    public UserDetails loadUserByUsername(String userPk) throws UsernameNotFoundException {
-        return userJpaRepo.findById(Integer.valueOf(userPk))
-                .orElseThrow(CUserNotFoundException::new);
+    public UserDetails loadUserByUsername(String userPk) {
+        return userJpaRepo.findById(Long.valueOf(userPk)).orElseThrow(CUserNotFoundException::new);
     }
 }

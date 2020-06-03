@@ -1,7 +1,7 @@
 package com.pandahune.jwttest.advice;
 
 import com.pandahune.jwttest.advice.exception.*;
-import com.pandahune.jwttest.domain.result.CommonResult;
+import com.pandahune.jwttest.model.response.CommonResult;
 import com.pandahune.jwttest.service.ResponseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
