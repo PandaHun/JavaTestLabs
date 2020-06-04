@@ -27,3 +27,4 @@ hs_err_pid*
 *.properties
 *.xml
 *.xml
+ETC/IBM_TEST/src/main/resources/application.properties
