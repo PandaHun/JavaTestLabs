@@ -1,7 +1,7 @@
 package com.pandahun.ibm.test.controller;
 
-import com.pandahun.ibm.test.domain.User;
-import com.pandahun.ibm.test.domain.UserRepository;
+import com.pandahun.ibm.test.domain.Testing;
+import com.pandahun.ibm.test.domain.TestingRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,23 +9,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 public class UserController {
 
-    private final UserRepository userRepository;
+    private final TestingRepo testingRepo;
 
     @RequestMapping("/test")
     public @ResponseBody ResponseEntity<String> test() {
-        List<String> list = new ArrayList<>();
-        list.add("User is a");
-        for(User user : userRepository.findAll()) {
-            list.add(user.toString());
+        List<Testing> t = testingRepo.findAll();
+        for( Testing tmp : t) {
+            System.out.println(tmp.toString());
         }
-        return new ResponseEntity<String>(list.toString(), HttpStatus.OK);
+        return new ResponseEntity<String>(t.toString(), HttpStatus.OK);
     }
 
 }
